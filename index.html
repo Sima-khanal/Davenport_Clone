@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navbar with Calendar and Trending</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="davenport-clone.css">
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="calendar-container"input type="date" id="calendar">
+            <span id="current-date"></span>
+        </div>
+        <div class="trending">
+            TRENDING
+        </div>
+        <div class="quotes-container">
+            <span id="quote"></span>
+        </div>
+        <div class="quote-buttons">
+            <button id="prev-quote">&larr;</button>
+            <button id="next-quote">&rarr;</button>
+        </div>
+        
+    </nav>
+
+    <nav class="navbar2">
+        <div class="left-nav">
+            <a href="#Blocks" class="nav-button">Blocks</a>
+            <a href="#Team" class="nav-button">Team</a>
+            <a href="#Advert" class="nav-button">Advert</a>
+        </div>
+        <div class="right-nav">
+            <a href="#Subscribe" class="nav-button">Subscribe</a>
+            <a href="#Purchase Theme" class="nav-button">Purchase Theme</a>
+        </div>
+    </nav>
+    <nav class="navbar3">
+        <div class="left-nav">
+            <a href="#Newsletter" class="nav-button newsletter"><i class="fas fa-envelope"></i> Newsletter</a>
+        </div>
+        <div class="center-nav">
+            DAVENPORT
+        </div>
+        <div class="right-nav">
+            <a href="#Facebook" class="nav-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#Instagram" class="nav-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#Twitter" class="nav-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#Pinterest" class="nav-icon"><i class="fab fa-pinterest"></i></a>
+            <a href="#Youtube" class="nav-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#Search" class="nav-icon"><i class="fas fa-search"></i></a>
+        </div>
+    </nav>
+    <hr>
+    
+    <nav class="navbar4">
+        <div class="nav-container">
+            <a href="#Home" class="nav-item">Home</a>
+            <a href="#Features" class="nav-item">Features</a>
+            <a href="#Beauty" class="nav-item">Beauty</a>
+            <a href="#Celebrity" class="nav-item">Celebrity <span class="new-button">New</span></a>
+            <a href="#Contact" class="nav-item">Contact Us</a>
+            <a href="#About" class="nav-item">About Us</a>
+        </div>
+    </nav>
+    <div class="albums" id="Home">
+        <div class="album">
+            <img src="https://i.pinimg.com/236x/8e/46/04/8e4604431aad175ed798295b9150fb1f.jpg" alt="Album 1">
+            <p>Discover the elegance and charm of Michael Kors's latest store in the heart of London. This stunning location features an array of the latest collections, showcased in a beautifully designed space that reflects the brand's luxurious style.</p>
+        </div>
+        <div class="album">
+            <img src="https://i.pinimg.com/236x/7a/39/82/7a39828f4118a25da088eaf6e175dde0.jpg" alt="Album 2">
+            <p>12 affordable online boutiques fashion editors are obsessed with. Spring is finally here—even though it doesn't really feel like it, with temperatures hovering at just about freezing for much of the country.</p>
+        </div>
+        <div class="album">
+            <img src="https://i.pinimg.com/236x/63/84/ac/6384ac19d65e67af226c8f3fa4062eab.jpg" alt="Album 3">
+            <p>The 12 Definitive Trends Of Spring/Summer 2019</p>
+        </div>
+        <div class="album">
+            <img src="https://i.pinimg.com/236x/81/72/a5/8172a5d37b35194cbd5c855a25aff2e4.jpg" alt="Album 4">
+            <p>Vote In This Year's Vogue Beauty Awards</h2>
+                <p>Cast your vote for the best beauty products of the year! Select your favorites in each category and submit your vote.</p>
+        </div>
+        <div class="album big-album">
+            <img src="https://i.pinimg.com/474x/e2/83/49/e28349be62e68bb03b8195f5c2e74dd9.jpg" alt="Album 5">
+            <p>The 11 Definitive Accessories Trends Of Summer
+                <p>Make a statement with oversized sunglasses that not only protect your eyes but also add a touch of glam to your summer look.</p></p>
+        </div>
+    </div>
+
+    
+    <div class="feature-section" id="Features">
+        <button class="read-more">Read More</button>
+        <div class="icons">
+            <div class="icon comment">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4BwjuZlujj-j44iRbD7_-Jnuv_pqMXvE9zxczKWD-q2bqt2O3zwljfk5FsDzvlEZ0aO8&usqp=CAU" alt="Comments">
+            </div>
+            <div class="icon views">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAh1BMVEX6+vpZWVkREiT///+Li4s2NjbMzMxPT0/q6uqHh4eioqJEREQAAAzBwcFcXFxTU1O0tLSsrKwAAADx8fEuLi5JSUk9PT19fX3Z2dm7u7sAABgICR4AABvj4+MiIiJISVMfIC4YGCc+P0oAABIzMzt9fYV1dXxZWV8oKTVJSU5nZ29ubnOZmp3NHrhiAAABk0lEQVR4nO3ai26CMABA0c7qeOlUEJSHY3MD5uP/v2/BOApbFl2wsWb3hBhJG73BKIYiBAAAAAAAAO6TbLl1y5f1TJkbUiUfPavxbEyU9dAYEfU7oi5F1KW0Rck//Sh3Z+uKksthw1mdnT131OxYaotaTBvh47nXlU7YzPZcfVEj9bLWBVFTNZso86O6300zogJ33nADQ6LskfrDNLJNifLUsEeU8VHfToVGRMnVRFmZEuWqk5vlSFOi1NtMiSKKKKKIIooooogiiiiiiCKKKKKIIooooogi6t9HdRe22xf3wzoqUsOR3VnYDusotTtdaLsFQMatNf65EEFreBkI0b0FQKyc1rAhd3AAd2Bta7Du12SHTxqEdr+oyNIg6hcVxBMN4qBXVHdh/Wr6NQEAAAAAAAAwg57rh/2IoYHE2EBiYKBjVHrcTg+DNEmy07O03m4TleUvr5txmvl5lrxl4/eizLe+nyT+pvKrPLtVVPVRlNuqLHZVme8PRVjOdnFVxfvhYbO53qFSRz39MVB/Jkf1/ifn/WIcdzQBhgAAAABJRU5ErkJggg==" alt="Views">
+                <span id="viewCount">12318</span>
+            </div>
+            <div class="icon likes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzNGvMv80OtsS9puFrbItBO4CtsO6im4YuolZts1TMrqRDiie2qLMGBPz2lEvblVAC9M4&usqp=CAU" alt="Likes">
+            </div>
+            <div class="icon share">
+                <img src="https://i.pinimg.com/236x/8b/73/39/8b733953e73773924500f0736f57d5db.jpg" alt="Share">
+                <div class="share-options">
+                    <a href="https://facebook.com" target="_blank"><img src="https://i.pinimg.com/236x/ab/10/b7/ab10b7cd26873ee5e11d37bd91f0d9e3.jpg" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="https://i.pinimg.com/236x/b8/16/52/b816528ec122ce316c1c3b57d1254107.jpg" alt="Instagram"></a>
+                    <a href="https://pinterest.com" target="_blank"><img src="https://i.pinimg.com/236x/13/3d/4b/133d4bf75a7b691ab58d2813063be8cb.jpg" alt="Pinterest"></a>
+                    
+                    <a href="mailto:?subject=Check this out&body=Check this awesome link"><img src="https://i.pinimg.com/236x/22/90/79/229079c8f5240851cece598cf8eee770.jpg" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="board1" id="Advert">
+        <div class="main-topic"><h1>970*90 AD</h1></div>
+    </div>
+    <hr>
+    <div class="photo-frame" id="Beauty">
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/af/8a/80/af8a803c4564006e215958ce0f54200b.jpg" alt="Photo 1">
+            <p>You can have anything you want in life if you dress for it.</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/a5/f3/68/a5f368dd0f174c65e79f61c303a7a4ca.jpg" alt="Photo 2">
+            <p>Clothes mean nothing until someone lives in them</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/30/bc/75/30bc75be746ea9cd1b281b49b5b49264.jpg" alt="Photo 3">
+            <p>Style is a way to say who you are without having to speak</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/62/5a/45/625a457bea3075e50de8b40240cb25b2.jpg" alt="Photo 4">
+            <p>Fashion is like eating, you shouldn't stick to the same menu.</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/7a/53/4b/7a534b0d02663ef2d94d00265ee880e0.jpg" alt="Photo 5">
+            <p>Slaying this look one strut at a time 👠🚶♀️</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/5c/86/f9/5c86f94b98e582a1313e52565df7a6c6.jpg" alt="Photo 6">
+            <p>You can have anything you want in life if you dress for it.</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/474x/d9/f3/e4/d9f3e42f62864e824c85dc4e4dfd540a.jpg" alt="Photo 7">
+            <p>Clothes mean nothing until someone lives in them</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/d8/b6/c3/d8b6c32f40a7dced1755fe6bb7df8cbe.jpg" alt="Photo 8">
+            <p>Style is a way to say who you are without having to speak</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/c5/98/21/c59821cc4386d7f3af66f5cfae99b2c0.jpg" alt="Photo 9">
+            <p>Fashion is like eating, you shouldn't stick to the same menu.</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/85/1d/2c/851d2cc6bcee6c3ee575ef280f08493d.jpg" alt="Photo 10">
+            <p>Slaying this look one strut at a time 👠🚶♀️</p>
+        </div>
+        
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/474x/1f/63/72/1f6372a6da7e647131a2f9b7230db54f.jpg" alt="Photo 11">
+            <p>Fashion is like eating, you shouldn't stick to the same menu.</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/736x/26/24/c2/2624c23729bdfa023842edbf90abb7c4.jpg" alt="Photo 12">
+            <p>Slaying this look one strut at a time 👠🚶♀️</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/a1/4e/43/a14e433457916c56a4363fe687321620.jpg" alt="Photo 13">
+            <p>You can have anything you want in life if you dress for it.</p>
+        </div>
+        <div class="photo-item">
+            <img src="https://i.pinimg.com/236x/1e/e5/76/1ee576bf14e17ed77c3ef690625557da.jpg" alt="Photo 14">
+            <p>Clothes mean nothing until someone lives in them</p>
+        </div>
+        
+    </div>
+
+<div class="board1" >
+    <div class="main-topic"><h1>Trending Post</h1></div>
+    <div class="sub-topic"><h5>Latest Feature</h5></div>
+</div>
+<hr>
+
+<div class="container" id="Celebrity">
+    <div class="item">
+        <span class="photo"><img src="https://i.pinimg.com/474x/ae/75/09/ae7509020527bec51294a1a1d40035ba.jpg" alt="Photo 1"></span>
+        <span class="text">12 affordable online boutiques fashion editors are obsessed with</span>
+    </div>
+    <div class="item">
+        <span class="photo"><img src="https://i.pinimg.com/236x/b5/ed/90/b5ed906bd2e741b71fee329e8ac1be82.jpg" alt="Photo 2"></span>
+        <span class="text">A First Look At Michael Kors's Charming New London Store</span>
+    </div>
+    <div class="item">
+        <span class="photo"><img src="https://i.pinimg.com/236x/e9/d2/3e/e9d23e3725c17988c1928d124411ac43.jpg" alt="Photo 3"></span>
+        <span class="text">Groovy Fashion Stars in the Once Upon a Time in Hollywood Teaser</span>
+    </div>
+</div>
+
+    <div class="container" id="About">
+    <div class="item">
+        <span class="photo"><img src="https://i.pinimg.com/236x/44/ae/c8/44aec81cfee64f96971d3f1f8e9d24d0.jpg" alt="Photo 4"></span>
+        <span class="text">5 Random Colours That Are About to Be Everywhere</span>
+    </div>
+    <div class="item">
+        <span class="photo"><img src="https://i.pinimg.com/236x/ac/83/eb/ac83eb6dbced06e4c8462724231f9fe2.jpg" alt="Photo 5"></span>
+        <span class="text">Everything you need to know about the V&A's Tim Walker exhibition</span>
+    </div>
+    <div class="item">
+        <span class="photo"><img src="https://i.pinimg.com/236x/87/f5/a5/87f5a554a9d3290d5e79ca6e2db97f15.jpg" alt="Photo 6"></span>
+        <span class="text">When is Stranger Things 3 on Netflix? Who is in the cast, and what is going to happen?</span>
+    </div>
+</div>
+
+<div class="news" id="Newsletter">
+    <div class="main-topic"><h1>News</h1></div>
+    <div class="sub-topic"><h5>Selected Fashion News</h5></div>
+</div>
+<hr>
+
+<div class="slider-container">
+    <div class="slider">
+        <img src="https://i.pinimg.com/236x/ab/03/57/ab035700736c17bd9b7afd64b261e953.jpg" alt="Image 1" class="slide">
+        <img src="https://i.pinimg.com/236x/7d/f5/0c/7df50c65a545796d6515d8134f67b75a.jpg" alt="Image 2" class="slide">
+        <img src="https://i.pinimg.com/474x/4e/77/df/4e77df865f14751492c582d05f710c27.jpg" alt="Image 3" class="slide">
+        <img src="https://i.pinimg.com/236x/a3/11/d0/a311d09bf3a008d8b47e1911859d0816.jpg" alt="Image 4" class="slide">
+        <img src="https://i.pinimg.com/236x/a0/1c/4d/a01c4de420e27cd9df3a3e05a1cae23b.jpg" alt="Image 5" class="slide">
+        <img src="https://i.pinimg.com/236x/21/a7/4c/21a74cbd2de254943c13fea9e4f2cde2.jpg" alt="Image 6" class="slide">
+    </div>
+    <div class="image-preview">
+        <img src="https://i.pinimg.com/236x/ab/03/57/ab035700736c17bd9b7afd64b261e953.jpg" alt="Image 1" class="preview">
+        <img src="https://i.pinimg.com/236x/7d/f5/0c/7df50c65a545796d6515d8134f67b75a.jpg" alt="Image 2" alt="Image 2" class="preview">
+        <img src="https://i.pinimg.com/474x/4e/77/df/4e77df865f14751492c582d05f710c27.jpg" alt="Image 3" class="preview">
+        <img src="https://i.pinimg.com/236x/a3/11/d0/a311d09bf3a008d8b47e1911859d0816.jpg" alt="Image 4" class="preview">
+        <img src="https://i.pinimg.com/236x/a0/1c/4d/a01c4de420e27cd9df3a3e05a1cae23b.jpg" alt="Image 5" class="preview">
+        <img src="https://i.pinimg.com/236x/21/a7/4c/21a74cbd2de254943c13fea9e4f2cde2.jpg" alt="Image 6" class="preview">
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="top-section">
+        <div class="brief-about">
+            <h3>About Davenport</h3>
+            <hr>
+            <p>Davenport is one of the most Elegant, Clean and Creative WordPress blog themes on Themeforest. Tell us your unique story about fashion, inspirations, food, tech news, photos, events and everyday moments from all over the world.</p>
+        </div>
+
+        <div class="brief-about">
+            <h3>Don't miss the end</h3>
+            <hr>
+            <p>Everything you need to know about the V&A's Tim Walker exhibition</p>
+        </div>
+
+        
+        <div class="useful-links">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Merch</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Help and Support</a></li>
+            </ul>
+        </div>
+        <div class="trending-slider">
+            <h3>Trending</h3>
+            <div class="slider1">
+                <img src="https://i.pinimg.com/236x/ab/03/57/ab035700736c17bd9b7afd64b261e953.jpg" alt="Image 1" class="slide">
+        <img src="https://i.pinimg.com/236x/7d/f5/0c/7df50c65a545796d6515d8134f67b75a.jpg" alt="Image 2" class="slide">
+        <img src="https://i.pinimg.com/474x/4e/77/df/4e77df865f14751492c582d05f710c27.jpg" alt="Image 3" class="slide">
+        <img src="https://i.pinimg.com/236x/a3/11/d0/a311d09bf3a008d8b47e1911859d0816.jpg" alt="Image 4" class="slide">
+        <img src="https://i.pinimg.com/236x/a0/1c/4d/a01c4de420e27cd9df3a3e05a1cae23b.jpg" alt="Image 5" class="slide">
+        <img src="https://i.pinimg.com/236x/21/a7/4c/21a74cbd2de254943c13fea9e4f2cde2.jpg" alt="Image 6" class="slide">
+            </div>
+        </div>
+    </div>
+    <div class="bottom-section" id="Contact">
+        <div class="subscribe-section">
+            <p>Enter your email:</p>
+            <input type="email" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Simakhanal2060"><img src="https://i.pinimg.com/236x/70/da/29/70da29e0cd3e98f2ba4bb67bd0bde726.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/cma_khanal/"><img src="https://i.pinimg.com/236x/70/94/b4/7094b40fd67ab2facb76e5b79d90cc0a.jpg" alt="Instagram"></a>
+            <a href="#"><img src="https://i.pinimg.com/236x/e9/58/5d/e9585dd0d277236b30953bca60761072.jpg" alt="Twitter"></a>
+            <a href="https://www.pinterest.com/seemakhanal608/"><img src="https://i.pinimg.com/236x/55/2d/25/552d25449b0457019d79e5ab04634441.jpg" alt="Pinterest"></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="https://i.pinimg.com/236x/4f/22/3f/4f223fd5dd033d55b672a49de29c83a2.jpg" alt="Mail"></a>
+        </div>
+    </div>
+    <div class="powered-by">
+        <p>Powered by Davenport</p>
+    </div>
+</footer>
+
+    <script src="davenport-clone.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
